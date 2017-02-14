@@ -2,7 +2,7 @@
 var express = require('express')
 var webpack = require('webpack')
 var config = require('./webpack.dev.conf')
-
+var proxy = require('http-proxy-middleware') //代理HTTP请求
 // 创建一个express实例
 var app = express()
 
@@ -33,6 +33,9 @@ compiler.plugin('compilation', function (compilation) {
 app.use(devMiddleware)
 // 注册中间件
 app.use(hotMiddleware)
+
+//当发送/api请求时，自动会跨域访问8080端口，前后端分离
+app.use('/api', proxy({target: 'http://localhost:8080', changeOrigin: true}));
 
 // 监听 8888端口，开启服务器
 app.listen(8888, function (err) {

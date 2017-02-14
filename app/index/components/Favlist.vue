@@ -1,12 +1,17 @@
 <template id="template-home">
-  <div>
-    <div v-for="n in 10">这是一个测试demo</div>
-  </div>
-
+    <div>
+       <p> WebPack+Vue框架搭建成功！</p>
+        <div class="bg"></div>
+    </div>
 </template>
 
 <style>
-  body {
-      background-color: green;
-  }
+    p {
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    .bg{
+        width: 200px;
+        height: 200px;
+    }
 </style>

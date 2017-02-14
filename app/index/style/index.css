@@ -1,0 +1,7 @@
+body{
+    background: gray;
+}
+.bg{
+    background-image:url("../images/demo1.jpg");
+    background-size: cover;
+}
