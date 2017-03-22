@@ -2,6 +2,7 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
+var PluginsPath = path.resolve(__dirname, '../app/global/plugins')
 module.exports = {
     // 入口文件，path.resolve()方法，可以结合我们给定的两个参数最后生成绝对路径，最终指向的就是我们的index.js文件
     entry: {
@@ -21,7 +22,9 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.vue'],
         alias: {
-            'Vue': 'vue/dist/vue.js'
+            'mod/vue': 'vue/dist/vue.js',
+            'mod/vue-router': path.resolve(PluginsPath, 'vue-router'),
+            'mod/jquery': path.resolve(PluginsPath, 'jquery-vendor.js'),
         }
     },
     module: {

@@ -2,10 +2,12 @@
 var express = require('express')
 var webpack = require('webpack')
 var config = require('./webpack.dev.conf')
+var history = require('connect-history-api-fallback')
 var proxy = require('http-proxy-middleware') //代理HTTP请求
 // 创建一个express实例
 var app = express()
 
+app.use(history());
 // 调用webpack并把配置传递过去
 var compiler = webpack(config)
 
@@ -24,7 +26,7 @@ var hotMiddleware = require('webpack-hot-middleware')(compiler)
 compiler.plugin('compilation', function (compilation) {
     compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {
         // 发布事件
-        hotMiddleware.publish({ action: 'reload' })
+        hotMiddleware.publish({action: 'reload'})
         cb()
     })
 })

@@ -9,6 +9,15 @@
       <div id="app">
 
         <my-component></my-component>
+
+          <router-link :to="{ path: '/nav1' }">Nav1</router-link>
+          <router-link :to="{ path: '/nav2' }">Nav2</router-link>
+
+          <transition>
+              <keep-alive>
+                  <router-view></router-view>
+              </keep-alive>
+          </transition>
       </div>
     </body>
 </html>
