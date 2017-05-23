@@ -22,9 +22,7 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.vue'],
         alias: {
-            'mod/vue': 'vue/dist/vue.js',
-            'mod/vue-router': path.resolve(PluginsPath, 'vue-router'),
-            'mod/jquery': path.resolve(PluginsPath, 'jquery-vendor.js'),
+            'mod/jquery': path.resolve(PluginsPath, 'jquery-vendor.js')
         }
     },
     module: {
