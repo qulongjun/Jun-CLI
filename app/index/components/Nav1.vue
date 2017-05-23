@@ -1,12 +1,12 @@
 <template>
-    <div>
-        {{msg}}
-
-        <transition>
-            <keep-alive>
-                <router-view></router-view>
-            </keep-alive>
-        </transition>
+    <div class="page-header">
+        <h1>这是第一页
+            <transition>
+                <keep-alive>
+                    <router-view></router-view>
+                </keep-alive>
+            </transition>
+        </h1>
     </div>
 </template>
 <script>

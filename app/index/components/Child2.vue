@@ -1,6 +1,4 @@
 <template>
-    <div>
-       Child 2
-    </div>
+    <small>第二子页面</small>
 </template>
 

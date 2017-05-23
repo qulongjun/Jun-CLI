@@ -1,6 +1,8 @@
 <template>
-    <div>
-        {{msg}}
+    <div class="page-header">
+        <h1>这是第二页
+
+        </h1>
     </div>
 </template>
 <script>

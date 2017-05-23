@@ -5,6 +5,7 @@ import VueResource from 'vue-resource'
 import store from './store/store';
 import router from './router/router'
 import 'mod/jquery'
+import 'bootstrap'
 
 
 //===========导入Vue组件==============
@@ -14,6 +15,7 @@ import Favlist from './components/Favlist.vue'
 
 //==========导入CSS文件===============
 import './style/index.css'
+import 'bootstrap/dist/css/bootstrap.css'
 
 
 Vue.config.debug = true;//开启错误提示
