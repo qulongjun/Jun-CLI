@@ -2,7 +2,6 @@
     <div>
         <p> WebPack+Vue框架搭建成功！</p>
         <p> 测试Vuex：{{count}}</p>
-        <div class="bg"></div>
     </div>
 </template>
 

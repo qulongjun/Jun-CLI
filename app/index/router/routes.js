@@ -1,6 +1,7 @@
 import Nav1 from '../components/Nav1.vue'
 import Nav2 from '../components/Nav2.vue'
-
+import Child1 from '../components/Child1.vue'
+import Child2 from '../components/Child2.vue'
 //路由映射
 var routes = [
     {
@@ -10,7 +11,14 @@ var routes = [
         beforeEnter: (to, from, next) => {
             //TODO
             next();
-        }
+        },
+        children: [{
+            path: "child1",
+            component: Child1
+        }, {
+            path: "child2",
+            component: Child2
+        }]
     }, {
         path: "/nav2",
         name: "/nav2",
