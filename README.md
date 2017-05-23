@@ -63,6 +63,10 @@ Step 2. 开始开发
 $ npm run dev
 ```
 
+Step 3. 访问地址
+```shell
+$ http://localhost:8888
+```
 
 # License
 [MIT](https://github.com/ElemeFE/cooking/LICENSE)
