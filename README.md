@@ -10,7 +10,7 @@
 
 ## 链接
 - [WebPack](http://webpack.github.io/docs/)
-- [Vue](https://github.com/cooking-demo)
+- [Vue](https://cn.vuejs.org/)
 - [Vuex](https://vuex.vuejs.org/)
 - [Vue-Router](https://router.vuejs.org/)
 - [Vue-Resource](https://github.com/pagekit/vue-resource)
