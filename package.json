@@ -1,7 +1,7 @@
 {
-  "name": "vue-webpack-demo",
+  "name": "jun-cli",
   "version": "1.0.0",
-  "description": "vue webpack demo",
+  "description": "vue webpack vue-router vue-router vuex",
   "main": "index.js",
   "scripts": {
     "build": "babel input.js -o compiled.js",
@@ -16,7 +16,7 @@
     "vue",
     "webpack"
   ],
-  "author": "wangjuan",
+  "author": "qulongjun",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.18.0",
